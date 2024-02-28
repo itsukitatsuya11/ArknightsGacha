@@ -8,10 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap" rel="stylesheet">
     <title>Arknights Gacha</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Arknights Gacha</h1>
+        <h1>ArkQuest: Elemental Chronicles</h1>
+        <div class="social-icons">
+            <a href="#" class="social-icon" id="facebookIcon"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/itsukitatsuya11" class="social-icon" id="githubIcon"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="version">V1.0 Pre-Alpha</p>
+        <hr/>
     </header>
     <main>
         <div id="operatorContainer" class="container"></div>
@@ -25,7 +32,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Card Collection</h2>
-            <input type="text" id="searchInput" oninput="searchPokemon()" placeholder="Search by name...">
+            <input type="text" id="searchInput" oninput="searchOperator()" placeholder="Search by name...">
             <div id="cardCollection" class="container"></div>
         </div>
     </div>
